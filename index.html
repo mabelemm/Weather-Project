@@ -10,7 +10,7 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <link href="src/styles.css" />
+    <link href="src/styles.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -41,7 +41,7 @@
                 class="btn btn-success w-100"
                 id="current-location-button"
               >
-                Current
+                Current Location
               </button>
             </div>
           </div>
@@ -52,18 +52,14 @@
             <span id="city">Edmonton</span>, <span id="country">CA</span>
           </strong>
         </h2>
-        <h5>
-          <ul>
-            <li id="date"></li>
-            <li id="description"></li>
-          </ul>
-        </h5>
+        <h5 id="date"></h5>
+        <h6 id="description"></h6>
         <div class="row">
           <div class="col-6">
             <div class="clearfix">
               <img
                 class="current float-left"
-                src="Images/partly_cloudy.png"
+                src="src/Images/partly_cloudy.png"
                 alt="partly_cloudy"
               />
               <span class="temp" id="temp">6 </span>
@@ -74,7 +70,7 @@
             </div>
           </div>
           <div class="col-6">
-            <ul>
+            <ul class="preci">
               <li>Humidity: <span id="humid">39</span>%</li>
               <li>Wind: <span id="wind">11 </span> KPMH</li>
             </ul>
@@ -85,7 +81,7 @@
             Tue 11
             <br />
             <img
-              src="Images/Risk_of_Th.png"
+              src="src/Images/Risk_of_Th.png"
               alt="Risk of Thunderstorm"
               width="35px"
             />
@@ -98,7 +94,7 @@
             Wed 12
             <br />
             <img
-              src="Images/Mix_sun_clouds.png"
+              src="src/Images/Mix_sun_clouds.png"
               alt="Mix of sun and clouds"
               width="35px"
             />
@@ -111,7 +107,7 @@
             Thu 13
             <br />
             <img
-              src="Images/Chance_shower.png"
+              src="src/Images/Chance_shower.png"
               alt="Chance of a shower"
               width="35px"
             />
@@ -124,7 +120,7 @@
             Fri 14
             <br />
             <img
-              src="Images/Chance_shower.png"
+              src="src/Images/Chance_shower.png"
               alt="Chance of a shower"
               width="35px"
             />
@@ -137,7 +133,7 @@
             Sat 15
             <br />
             <img
-              src="Images/Cloudy_showers.png"
+              src="src/Images/Cloudy_showers.png"
               alt="Cloudy with showers"
               width="35px"
             />
@@ -148,6 +144,11 @@
           </div>
         </div>
       </div>
+      <small
+        ><a href="https://github.com/mabelemm/Weather-Project" target="_blank"
+          >Open source code</a
+        >, by Mabel George</small
+      >
     </div>
     <script src="src/index.js"></script>
   </body>
